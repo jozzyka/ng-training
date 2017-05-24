@@ -9,7 +9,7 @@ import { AuthService } from '../../shared.barrel';
 })
 export class NavigationComponent implements OnInit {
 
-  public constructor(public authService: AuthService) {
+  public constructor(public authService: AuthService,) {
     //
   }
 
