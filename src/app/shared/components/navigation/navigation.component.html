@@ -12,10 +12,10 @@
     <div class="collapse navbar-collapse" id="navbar">
       <ul class="nav navbar-nav">
         <li [routerLinkActive]="['active']">
-          <a [routerLink]="['/home']">Home</a>
+          <a [routerLink]="['/home']">{{ 'HOME.TITLE' | translate }}</a>
         </li>
         <li [routerLinkActive]="['active']">
-          <a [routerLink]="['/task/list']">Tasks</a>
+          <a [routerLink]="['/task/list']">{{ 'HOME.TASKS' | translate }}</a>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -33,6 +33,12 @@
         </li>
         <li *ngIf="!!authService.user">
           <a (click)="authService.logout()">Log Out</a>
+        </li>
+        <li>
+          {{ 'HOME.SELECT' | translate }}
+          <select #langSelect (change)="translate.use(langSelect.value)">
+            <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">{{ lang }}</option>
+          </select>
         </li>
       </ul>
     </div>
