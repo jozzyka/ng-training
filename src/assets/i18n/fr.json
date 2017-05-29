@@ -6,5 +6,11 @@
     "REGISTRATION": "Les enregistrement",
     "LOGIN": "Le Login",
     "LOGOUT": "Le Logout"       
+  },
+  "REGISTRATION": {
+    "NAME": "Név",
+    "PASSWD": "Jelszó",
+    "PASSWDC": "Jelszó (újra)",
+    "RESET": "Törlés"
   }
 }

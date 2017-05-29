@@ -6,5 +6,11 @@
     "REGISTRATION": "Registration",
     "LOGIN": "Login",
     "LOGOUT": "Logout"  
+  },
+  "REGISTRATION": {
+    "NAME": "Name",
+    "PASSWD": "Password",
+    "PASSWDC": "Password (confirm)",
+    "RESET": "Reset"
   }
 }

@@ -6,5 +6,11 @@
     "REGISTRATION": "Regisztráció",
     "LOGIN": "Bejelentkezés",
     "LOGOUT": "Kijelentkezés"  
+  },
+  "REGISTRATION": {
+    "NAME": "Név",
+    "PASSWD": "Jelszó",
+    "PASSWDC": "Jelszó (újra)",
+    "RESET": "Törlés"
   }
 }
