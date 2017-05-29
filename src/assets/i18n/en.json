@@ -2,6 +2,9 @@
   "HOME": {
     "TITLE": "Home",
     "SELECT": "Change language",
-    "TASKS": "Tasks"
+    "TASKS": "Tasks",
+    "REGISTRATION": "Registration",
+    "LOGIN": "Login",
+    "LOGOUT": "Logout"  
   }
 }

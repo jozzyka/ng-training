@@ -2,6 +2,9 @@
   "HOME": {
     "TITLE": "Otthon",
     "SELECT": "Válassz nyelvet!",
-    "TASKS": "Feladatok"
+    "TASKS": "Feladatok",
+    "REGISTRATION": "Regisztráció",
+    "LOGIN": "Bejelentkezés",
+    "LOGOUT": "Kijelentkezés"  
   }
 }
