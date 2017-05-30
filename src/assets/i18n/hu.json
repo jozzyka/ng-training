@@ -12,7 +12,7 @@
     "PASSWD": "Jelszó",
     "PASSWDC": "Jelszó (újra)",
     "RESET": "Törlés",
-    "SUCCESS": "Successful registration!",
-    "FAILED": "Registration failed."
+    "SUCCESS": "Sikeres regisztráció!",
+    "FAILED": "Sikertelen regisztráció."
   }
 }

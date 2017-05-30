@@ -12,7 +12,7 @@
     "PASSWD": "密碼",
     "PASSWDC": "密碼 (確認)",
     "RESET": "復位",
-    "SUCCESS": "Successful registration!",
-    "FAILED": "Registration failed."
+    "SUCCESS": "成功註冊！",
+    "FAILED": "註冊失敗"
   }
 }

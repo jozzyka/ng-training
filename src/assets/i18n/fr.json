@@ -12,7 +12,7 @@
     "PASSWD": "Mot de passe",
     "PASSWDC": "Mot de passe (confirmer)",
     "RESET": "Réinitialiser",
-        "SUCCESS": "Successful registration!",
-    "FAILED": "Registration failed."
+        "SUCCESS": "Enregistrement réussi!",
+    "FAILED": "Échec de l'enregistrement."
   }
 }

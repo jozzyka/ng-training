@@ -44,18 +44,18 @@ export class RegistrationComponent implements OnInit {
     this._userService.register(this.user).subscribe(
       (response: Response) => {
         console.log(response);
-        window.alert(this.translate.get('REGISTRATION.SUCCESS').subscribe((res: string) => {
-          console.log(res);
-        }));
+        this.translate.get('REGISTRATION.SUCCESS').subscribe((res: string) => {
+          window.alert(res);
+        });
         this.user = new User();
         this.form.reset();
         this.loading = false;
       },
       (error: any) => {
         console.log(error);
-        window.alert(this.translate.get('REGISTRATION.FAILED').subscribe((res: string) => {
-          console.log(res);
-        }));
+        this.translate.get('REGISTRATION.FAILED').subscribe((res: string) => {
+         window.alert(res);
+        });
         this.loading = false;
       },
       () => {
