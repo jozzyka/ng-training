@@ -8,9 +8,9 @@
     "LOGOUT": "Le Logout"       
   },
   "REGISTRATION": {
-    "NAME": "Név",
-    "PASSWD": "Jelszó",
-    "PASSWDC": "Jelszó (újra)",
-    "RESET": "Törlés"
+    "NAME": "Prénom",
+    "PASSWD": "Mot de passe",
+    "PASSWDC": "Mot de passe (confirmer)",
+    "RESET": "Réinitialiser"
   }
 }

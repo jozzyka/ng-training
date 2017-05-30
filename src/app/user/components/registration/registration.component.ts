@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Response } from '@angular/http';
-
+import { TranslateService } from '@ngx-translate/core';
 import { User, UserService } from '../../user.barrel';
 
 @Component({
@@ -22,8 +22,12 @@ export class RegistrationComponent implements OnInit {
     RegistrationComponent.passwordMatchValidator
   );
 
-  public constructor(private _userService: UserService) {
-    //
+  public constructor(private _userService: UserService,private translate:TranslateService) {
+    translate.addLangs(["en","fr","hu"]);
+    translate.setDefaultLang('en');
+
+    let browserLang = translate.getBrowserLang();
+    translate.use(browserLang.match(/en|fr|hu/)? browserLang : 'en');
   }
 
   public ngOnInit() {
