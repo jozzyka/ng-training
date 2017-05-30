@@ -11,6 +11,8 @@
     "NAME": "Prénom",
     "PASSWD": "Mot de passe",
     "PASSWDC": "Mot de passe (confirmer)",
-    "RESET": "Réinitialiser"
+    "RESET": "Réinitialiser",
+        "SUCCESS": "Successful registration!",
+    "FAILED": "Registration failed."
   }
 }

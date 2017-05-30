@@ -11,7 +11,7 @@ import { User, UserService } from '../../user.barrel';
 })
 export class RegistrationComponent implements OnInit {
   public loading: boolean = true;
-  public user: User = new User();
+  public user: User = new User();;
   public form = new FormGroup(
     {
       name: new FormControl('', Validators.required),
@@ -20,14 +20,16 @@ export class RegistrationComponent implements OnInit {
       passwordConfirm: new FormControl('', [Validators.required, Validators.minLength(6)]),
     },
     RegistrationComponent.passwordMatchValidator
+    
   );
 
   public constructor(private _userService: UserService,private translate:TranslateService) {
-    translate.addLangs(["en","fr","hu"]);
+    translate.addLangs(["en","fr","hu","ci"]);
     translate.setDefaultLang('en');
 
     let browserLang = translate.getBrowserLang();
-    translate.use(browserLang.match(/en|fr|hu/)? browserLang : 'en');
+    translate.use(browserLang.match(/en|fr|hu|ci/)? browserLang : 'en');
+    
   }
 
   public ngOnInit() {
@@ -42,15 +44,18 @@ export class RegistrationComponent implements OnInit {
     this._userService.register(this.user).subscribe(
       (response: Response) => {
         console.log(response);
-        window.alert('Successful registration!');
-        
+        window.alert(this.translate.get('REGISTRATION.SUCCESS').subscribe((res: string) => {
+          console.log(res);
+        }));
         this.user = new User();
         this.form.reset();
         this.loading = false;
       },
       (error: any) => {
         console.log(error);
-        window.alert('Registration failed.');
+        window.alert(this.translate.get('REGISTRATION.FAILED').subscribe((res: string) => {
+          console.log(res);
+        }));
         this.loading = false;
       },
       () => {

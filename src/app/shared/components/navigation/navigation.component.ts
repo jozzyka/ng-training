@@ -10,16 +10,16 @@ import { AuthService } from '../../shared.barrel';
 export class NavigationComponent implements OnInit {
 
   public constructor(public authService: AuthService,private translate:TranslateService) {
-    translate.addLangs(["en","fr","hu"]);
+    translate.addLangs(["en","fr","hu","ci"]);
     translate.setDefaultLang('en');
 
     let browserLang = translate.getBrowserLang();
-    translate.use(browserLang.match(/en|fr|hu/)? browserLang : 'en');
+    translate.use(browserLang.match(/en|fr|hu|ci/)? browserLang : 'en');
  
   }
 
   public ngOnInit() {
-    //
+    
   }
 
 }

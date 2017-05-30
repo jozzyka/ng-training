@@ -1,0 +1,18 @@
+{
+  "HOME": {
+    "TITLE": "家",
+    "SELECT": "改變語言",
+    "TASKS": "任務",
+    "REGISTRATION": "註冊",
+    "LOGIN": "登錄",
+    "LOGOUT": "登出"  
+  },
+  "REGISTRATION": {
+    "NAME": "名稱",
+    "PASSWD": "密碼",
+    "PASSWDC": "密碼 (確認)",
+    "RESET": "復位",
+    "SUCCESS": "Successful registration!",
+    "FAILED": "Registration failed."
+  }
+}

@@ -11,6 +11,8 @@
     "NAME": "Név",
     "PASSWD": "Jelszó",
     "PASSWDC": "Jelszó (újra)",
-    "RESET": "Törlés"
+    "RESET": "Törlés",
+    "SUCCESS": "Successful registration!",
+    "FAILED": "Registration failed."
   }
 }
